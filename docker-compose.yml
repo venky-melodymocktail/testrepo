@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: mmfrontendimage
+    ports:
+      - "8080:80"
+    restart: always
+    networks:
+      - frontend-network
+
+
+networks:
+  frontend-network:
+    driver: bridge

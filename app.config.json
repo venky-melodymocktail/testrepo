@@ -1,0 +1,10 @@
+{
+    "apps": [
+        {
+            "name": "mm-dev-64390b599811daae82a555cf",
+            "script": "npx",
+            "interpreter": "none",
+            "args": "serve -s build/ -l 34142"
+        }
+    ]
+}

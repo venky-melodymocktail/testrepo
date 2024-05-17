@@ -1,0 +1,59 @@
+.hovereffectlogin-btn {
+    /* text-transform: uppercase; */
+    border: 3px solid black;
+    border-radius: 4px;
+    position: relative;
+    color: rgba(186, 15, 23, 1);
+    /* background-color: white; */
+}
+
+.hovereffectlogin-btn:hover span {
+    color: #fff !important;
+}
+
+.hovereffectlogin-btn::before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: rgba(186, 15, 23, 1);
+    border-radius: 4px;
+    z-index: -2;
+}
+
+.hovereffectlogin-btn:hover::before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1 !important;
+}
+
+.hovereffectlogin-btn:hover::before,
+.hovereffectlogin-btn:focus::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    /* Add other styles for the hover and focus states */
+}
+
+.contact-btn {
+    transition: all 0.3s linear 0s;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.07100000232458115) !important;
+
+    /* &:hover {
+      
+      box-shadow: 4px 4px 7px 0px rgb(240, 120, 126) !important;
+      
+    } */
+}
+
+.contact-btn:hover {
+    box-shadow: 4px 4px 7px 0px rgb(240, 120, 126) !important;
+}

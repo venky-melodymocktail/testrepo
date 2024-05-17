@@ -1,0 +1,216 @@
+.carousel {
+    overflow-x: scroll;
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+
+    /* snap */
+    scroll-snap-type: x mandatory;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-item {
+    /* snap */
+    scroll-snap-align: start;
+    scroll-margin: 5px;
+}
+
+.hovereffectsignIn-btn {
+    background-color: rgba(186, 15, 23, 1) !important;
+    /* padding: 10px 30px; */
+    border-radius: 4px !important;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    color: #fff !important;
+}
+
+.hovereffectsignIn-btn:hover {
+    box-shadow:
+        0px 0px 0px 1px #fff,
+        0px 0px 0px 3.5px rgba(186, 15, 23, 1),
+        0px 0px 0px 7.5px white,
+        0px 0px 0px 8.5px rgba(186, 15, 23, 1) !important;
+    background: white !important;
+    color: rgba(186, 15, 23, 1) !important;
+    border-radius: 4px;
+}
+
+.hovereffectsignIn-btn:hover span {
+    /* box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3.5px rgba(186,15,23,1), 0px 0px 0px 7.5px white, 0px 0px 0px 8.5px rgba(186,15,23,1) !important;
+    background: white !important; */
+    color: rgba(186, 15, 23, 1) !important;
+    /* border-radius: 4px; */
+}
+
+.blogContainer:hover .blogCard {
+    /* filter:blur(3px); */
+    opacity: 0.4;
+    background-color: #ffffff !important;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 12px;
+    /* transform: scale(.98); */
+
+    box-shadow: none;
+    border-width: 0px !important;
+}
+.blogContainer:hover .blogCard:hover {
+    transform: scale(1);
+    /* filter:blur(0px); */
+    opacity: 1;
+    /* opacity:1; */
+    /* box-shadow:0 8px 20px 0px rgba(0,0,0,0.125); */
+    border-width: 0px !important;
+}
+
+.hovereffectlogin-btn {
+    /* text-transform: uppercase; */
+    border: 3px solid black;
+    border-radius: 4px;
+    position: relative;
+    color: rgba(186, 15, 23, 1);
+    /* background-color: white; */
+}
+
+.hovereffectlogin-btn:hover span {
+    color: #fff !important;
+}
+
+.hovereffectlogin-btn::before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: rgba(186, 15, 23, 1);
+    border-radius: 4px;
+    z-index: -2;
+}
+
+.hovereffectlogin-btn:hover::before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1 !important;
+}
+
+.hovereffectlogin-btn:hover::before,
+.hovereffectlogin-btn:focus::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    /* Add other styles for the hover and focus states */
+}
+
+.contact-btn {
+    transition: all 0.3s linear 0s;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.07100000232458115) !important;
+
+    /* &:hover {
+      
+      box-shadow: 4px 4px 7px 0px rgb(240, 120, 126) !important;
+      
+    } */
+}
+
+.contact-btn:hover {
+    box-shadow: 4px 4px 7px 0px rgb(240, 120, 126) !important;
+}
+
+.grayshadoweffect-btn {
+    transition: all 0.3s linear 0s;
+    box-shadow: 0px 10px 10px rgba(255, 255, 255, 0) !important;
+
+    /* &:hover {
+      
+      box-shadow: 4px 4px 7px 0px rgba(90, 89, 89, 0.638) !important;
+      
+    } */
+}
+
+.grayshadoweffect-btn:hover {
+    box-shadow: 4px 4px 7px 0px rgba(90, 89, 89, 0.638) !important;
+}
+
+.serviceCard {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.serviceCard:hover {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border-radius: 12px;
+    /* border-left: 7px solid rgba(186,15,23,1); */
+    box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.1),
+        0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.MovieTrailerButton {
+    transition: all 0.2s ease-in-out;
+}
+
+.MovieTrailerButton:hover {
+    /* box-shadow: 0px 0px 2px 2px rgba(217, 64, 71, 0.539); */
+    transform: scale(1.08);
+}
+
+.hoverEffect2-button {
+    /* border: 3px solid black;
+    border-radius: 4px; */
+    position: relative;
+    color: rgba(186, 15, 23, 1);
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    z-index: 1;
+    /* background-color: white; */
+}
+
+.hoverEffect2-button:hover {
+    border-color: #fff !important;
+}
+
+.hoverEffect2-button:hover span {
+    color: #fff !important;
+}
+
+.hoverEffect2-button::before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: rgba(186, 15, 23, 1);
+    border-radius: 25px;
+    z-index: -2;
+}
+
+.hoverEffect2-button:hover::before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1 !important;
+}
+
+.hoverEffect2-button:hover::before,
+.hoverEffect2-button:focus::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    /* Add other styles for the hover and focus states */
+}

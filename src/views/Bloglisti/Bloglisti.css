@@ -1,0 +1,11 @@
+@media (min-width: 100000px) {
+    #t18_180_1340 {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1170px) {
+    #t18_180_1340 {
+        display: none !important;
+    }
+}
