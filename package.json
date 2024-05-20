@@ -50,8 +50,6 @@
         "build": "vite build",
         "serve": "vite preview",
         "test": "jest"
-        "test": "mocha",
-               
     },
     "eslintConfig": {
         "extends": [
