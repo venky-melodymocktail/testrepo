@@ -51,14 +51,7 @@
         "serve": "vite preview",
         "test": "jest"
         "test": "mocha",
-            "test:awesome": "mocha --reporter mochawesome || true ",
-            "open:report": "open mochawesome-report/mochawesome.html",
-            "sonar":"sonar-scanner",
-            "coverage": "./node_modules/.bin/nyc -r cobertura -r text-summary -r html npm test",
-            "coverage-lcov": "./node_modules/.bin/nyc -r cobertura -r text-summary -r lcov npm test",
-            "start": "nodemon src/index.js",
-            "build": "webpack -p",
-            "lint": "./node_modules/.bin/eslint ."        
+               
     },
     "eslintConfig": {
         "extends": [
