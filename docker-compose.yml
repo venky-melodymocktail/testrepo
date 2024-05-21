@@ -4,9 +4,9 @@ services:
   frontend:
     image: venkynagidi/test:one
     ports:
-      - "8082:80"
+      - "8080:80"
   admin:
     image: venkynagidi/admin:one
     ports:
-      - "8081:80"
+      - "8088:80"
   
