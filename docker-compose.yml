@@ -8,5 +8,5 @@ services:
   admin:
     image: venkynagidi/admin:one
     ports:
-      - "8088:80"
+      - "8081:80"
   
