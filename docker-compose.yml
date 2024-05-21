@@ -6,10 +6,9 @@ services:
     ports:
       - "8080:80"
     restart: always
-    networks:
-      - frontend-network
-
-
-networks:
-  frontend-network:
-    driver: bridge
+  admin:
+    image: venkynagidi/admin:${BUILD_TAG}
+    ports:
+      - "8088:80"
+    restart: always
+   
