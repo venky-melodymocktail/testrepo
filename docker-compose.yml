@@ -5,8 +5,12 @@ services:
     image: venkynagidi/test:one
     ports:
       - "8080:80"
-  admin:
-    image: venkynagidi/admin:one
-    ports:
-      - "8088:80"
+    networks:
+      - frontend-network
+
+networks:
+  frontend-network:
+    driver: bridge
+ 
+  
   
