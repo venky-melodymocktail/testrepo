@@ -5,12 +5,7 @@ services:
     image: venkynagidi/frontend:one
     ports:
       - "8080:80"
-    networks:
-      - frontend-network
-
-networks:
-  frontend-network:
-    driver: bridge
+  
  
   
   
